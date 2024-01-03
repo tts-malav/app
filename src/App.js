@@ -7,11 +7,10 @@ function App() {
     <>
     <Navbar title="App" about="Malav Shah"/>
     <div className="container">
-
     <TextForm heading ="Enter text below :" />
     </div>
     </>
-  );
+  ); 
 }
-
+ 
 export default App;

@@ -1,21 +1,24 @@
 import React, {useState} from 'react'
 
-
+// rfc
 export default function TextForm(props) {
 
+// State       update function         Default Value
+    const [text, setText] = useState('Enter Text Here'); 
+
+
     const handleUpClick = ()=>{
-        console.log("Uppercase was clicked" + text);
+        // console.log("Uppercase was clicked" + text);
         let newText = text.toUpperCase();
         setText(newText);
     }
 
+     
     const handleOnChange = (event)=>{
-        console.log("On Change");
+        // console.log("On Change");
         setText(event.target.value);
     }
 
-    const [text, setText] = useState('Enter Text Here');
-    
     return (
         <div>
             <h1>{props.heading}</h1>
@@ -26,3 +29,6 @@ export default function TextForm(props) {
         </div>
   )
 }
+
+
+// Hooks : Use class features without making classes

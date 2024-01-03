@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 export default function Navbar(props) {
   return (
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">{props.title}</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +18,6 @@ export default function Navbar(props) {
             <li className="nav-item">
               <a className="nav-link" href="/">{props.about}</a>
             </li>
-          
           </ul>
           <form className="d-flex" role="search">
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
@@ -31,11 +30,11 @@ export default function Navbar(props) {
 }
 
 Navbar.propTypes = {
-    title : PropTypes.string.isRequired,
-    about : PropTypes.string.isRequired
+  title : PropTypes.string.isRequired,
+  about : PropTypes.string.isRequired
 }
 
 Navbar.defaultProps = {
-    title : 'Set title here',
-    about : 'About text here'
+  title : 'Set title here',
+  about : 'About text here'
 };
